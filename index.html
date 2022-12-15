@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Objects</title>
+</head>
+<body>
+    <h1> 1)Problem:</h1>
+    <p> You are given a string (STR) of length N, consisting of only the lower case English alphabet. <br>
+      Your task is to remove all the duplicate occurrences of characters in the string. <br>
+
+      Input: <br>
+      abcadeecfb
+      
+      Output: <br>
+      abcdef
+    </p>
+    <pre>
+      function RemoveDuplicate(STR, N )
+      {
+        var s = new Set();
+
+        for (var i = 0; i < N ; i++)
+        a.add(STR(i));
+
+        for (const v of s)
+        {
+          document.write(v);
+        }
+      }
+      var STR = "abcadeecfb" ;
+      var N = STR.lengh;
+      RemoveDuplicate(STR, N);
+
+    </pre>
+    <h1> 2)Problem:</h1>
+    <p>
+You are given a string (STR) of length N, you have to print the count of all alphabet.(using maps) <br>
+Input: <br>
+abcadeecfb <br>
+
+Output: <br>
+a=2 <br>
+b=2 <br>
+c=2 <br>
+d=1 <br>
+e=2 <br>
+f=1 <br>
+</p>
+<pre>
+  function CountAlph(STR, N )
+  {
+    var d = new Map();
+
+    STR.split('').forEach( N => {
+      if (d.has(N))
+      {
+        d.set(N, d.get(N)+1);
+      }
+      else 
+      {
+        d.set(N, 1);
+      }
+    });
+    STR.split('').forEach(N =>{
+      if(d.has(N) && d.get(N)!=0)
+      {
+        console.log(N + "=" + d.get(N) + "");
+        d.set(N, 0);
+      }
+    });
+  }
+  CountAlph("abcadeecfb")
+
+</pre>
+    <script src="index.js"></script>
+    
+   
+</body>
+</html>
